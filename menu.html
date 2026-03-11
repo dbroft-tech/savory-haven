@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Savory Haven's exquisite menu featuring starters, main dishes, desserts, and drinks. Filter by category to discover your perfect dish.">
+    <meta name="keywords" content="restaurant menu, fine dining, starters, main dishes, desserts, drinks, gourmet">
+    <title>Our Menu | Savory Haven</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                Savory <span>Haven</span>
+            </a>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="menu.html" class="nav-link active">Menu</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="reservations.html" class="nav-link">Reservations</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <a href="reservations.html" class="btn btn-primary">Book a Table</a>
+            </nav>
+            
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="page-header-content">
+                <span class="section-subtitle">Culinary Delights</span>
+                <h1>Our Menu</h1>
+                <div class="breadcrumbs">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span class="current">Menu</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="menu-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Explore</span>
+                    <h2>Discover Our Culinary Creations</h2>
+                    <p>From carefully crafted starters to indulgent desserts, every dish is prepared with passion and the finest ingredients.</p>
+                </div>
+                
+                <!-- Menu Category Filter -->
+                <div class="menu-categories reveal">
+                    <button class="menu-category-btn active" data-category="all">All</button>
+                    <button class="menu-category-btn" data-category="starters">Starters</button>
+                    <button class="menu-category-btn" data-category="mains">Main Dishes</button>
+                    <button class="menu-category-btn" data-category="desserts">Desserts</button>
+                    <button class="menu-category-btn" data-category="drinks">Drinks</button>
+                </div>
+                
+                <!-- Menu Items Grid -->
+                <div class="menu-items-grid">
+                    <!-- Starters -->
+                    <div class="menu-item reveal" data-category="starters">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400&q=80" alt="Pan-Seared Scallops">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Pan-Seared Scallops</h4>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">$28</span>
+                            </div>
+                            <p class="menu-item-description">Jumbo scallops with cauliflower purée, crispy pancetta, and lemon butter sauce.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item reveal" data-category="starters">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1541014741259-de529411b336?w=400&q=80" alt="Burrata Salad">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Burrata Heirloom Salad</h4>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">$22</span>
+                            </div>
+                            <p class="menu-item-description">Fresh burrata with heirloom tomatoes, basil oil, and aged balsamic glaze.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item reveal" data-category="starters">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=400&q=80" alt="Foie Gras">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Seared Foie Gras</h4>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">$34</span>
+                            </div>
+                            <p class="menu-item-description">Pan-seared foie gras with fig compote, brioche, and port wine reduction.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item reveal" data-category="starters">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1551248429-40975aa4de74?w=400&q=80" alt="Oysters">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Oysters Rockefeller</h4>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">$26</span>
+                            </div>
+                            <p class="menu-item-description">Fresh oysters baked with spinach, herbs, and parmesan crust (half dozen).</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Main Dishes -->
+                    <div class="menu-item reveal" data-category="mains">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1546833998-877b37c2e5c6?w=400&q=80" alt="Truffle Risotto">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Black Truffle Risotto</h4>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">$42</span>
+                            </div>
+                            <p class="menu-item-description">Creamy Arborio rice with black truffle shavings, parmesan, and white wine.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item reveal" data-category="mains">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80" alt="Wagyu Beef">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Wagyu Beef Tenderloin</h4>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">$68</span>
+                            </div>
+                            <p class="menu-item-description">Premium A5 Wagyu with truffle mashed potatoes, asparagus, and red wine jus.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item reveal" data-category="mains">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400&q=80" alt="Grilled Salmon">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Grilled Atlantic Salmon</h4>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">$38</span>
+                            </div>
+                            <p class="menu-item-description">Fresh salmon with lemon herb butter, roasted vegetables, and quinoa pilaf.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item reveal" data-category="mains">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&q=80" alt="Lamb Rack">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Herb-Crusted Lamb Rack</h4>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">$52</span>
+                            </div>
+                            <p class="menu-item-description">New Zealand lamb with herb crust, mint jus, and rosemary potatoes.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item reveal" data-category="mains">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=400&q=80" alt="Lobster Tail">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Butter-Poached Lobster</h4>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">$65</span>
+                            </div>
+                            <p class="menu-item-description">Whole lobster tail with drawn butter, saffron risotto, and champagne sauce.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item reveal" data-category="mains">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=400&q=80" alt="Mushroom Pasta">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Wild Mushroom Pappardelle</h4>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">$34</span>
+                            </div>
+                            <p class="menu-item-description">House-made pasta with porcini, chanterelles, truffle oil, and pecorino.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Desserts -->
+                    <div class="menu-item reveal" data-category="desserts">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=400&q=80" alt="Chocolate Fondant">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Valrhona Chocolate Fondant</h4>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">$16</span>
+                            </div>
+                            <p class="menu-item-description">Molten dark chocolate cake with vanilla bean ice cream and raspberry coulis.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item reveal" data-category="desserts">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&q=80" alt="Tiramisu">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Classic Tiramisu</h4>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">$14</span>
+                            </div>
+                            <p class="menu-item-description">Traditional Italian dessert with mascarpone, espresso-soaked ladyfingers, and cocoa.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item reveal" data-category="desserts">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1488477181946-6428a029177b?w=400&q=80" alt="Crème Brûlée">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Vanilla Bean Crème Brûlée</h4>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">$13</span>
+                            </div>
+                            <p class="menu-item-description">Rich custard with caramelized sugar crust and fresh seasonal berries.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item reveal" data-category="desserts">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400&q=80" alt="Macarons">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Assorted French Macarons</h4>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">$12</span>
+                            </div>
+                            <p class="menu-item-description">Selection of pistachio, raspberry, salted caramel, and passion fruit macarons.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Drinks -->
+                    <div class="menu-item reveal" data-category="drinks">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=400&q=80" alt="Signature Cocktail">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Haven Signature Cocktail</h4>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">$18</span>
+                            </div>
+                            <p class="menu-item-description">Elderflower gin, champagne, fresh berries, and edible gold leaf garnish.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item reveal" data-category="drinks">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1474722883778-792e7990302f?w=400&q=80" alt="Red Wine">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Château Margaux 2015</h4>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">$45/glass</span>
+                            </div>
+                            <p class="menu-item-description">Premier Grand Cru Classé Bordeaux with notes of blackcurrant, violet, and spice.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item reveal" data-category="drinks">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?w=400&q=80" alt="White Wine">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Dom Pérignon Vintage</h4>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">$65/glass</span>
+                            </div>
+                            <p class="menu-item-description">Prestigious champagne with almond, cocoa, and white fruit aromatics.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item reveal" data-category="drinks">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=400&q=80" alt="Espresso">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Artisan Espresso</h4>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">$6</span>
+                            </div>
+                            <p class="menu-item-description">Single-origin Ethiopian beans, rich crema, served with handcrafted chocolate.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content reveal">
+                    <h2>Ready to Experience These Flavors?</h2>
+                    <p>Reserve your table now and let our chefs take you on a culinary journey.</p>
+                    <a href="reservations.html" class="btn btn-white">Make a Reservation</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        Savory <span>Haven</span>
+                    </a>
+                    <p>Experience the art of fine dining at Savory Haven, where every meal becomes a cherished memory.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="TripAdvisor">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M2 12h20"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links-wrapper">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="menu.html">Our Menu</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact-wrapper">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>123 Culinary Avenue, Gourmet District<br>New York, NY 10001</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>info@savoryhaven.com</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-hours-wrapper">
+                    <h4 class="footer-title">Opening Hours</h4>
+                    <ul class="footer-hours">
+                        <li>
+                            <span>Monday - Thursday</span>
+                            <span>11:00 AM - 10:00 PM</span>
+                        </li>
+                        <li>
+                            <span>Friday - Saturday</span>
+                            <span>11:00 AM - 11:00 PM</span>
+                        </li>
+                        <li>
+                            <span>Sunday</span>
+                            <span>10:00 AM - 9:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Savory Haven. All rights reserved. | Designed with passion for exceptional dining.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>

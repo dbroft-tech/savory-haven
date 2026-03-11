@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your table at Savory Haven. Make a reservation for an unforgettable fine dining experience with our easy online booking system.">
+    <meta name="keywords" content="restaurant reservation, book a table, fine dining reservation, Savory Haven booking">
+    <title>Reservations | Savory Haven</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                Savory <span>Haven</span>
+            </a>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="reservations.html" class="nav-link active">Reservations</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <a href="reservations.html" class="btn btn-primary">Book a Table</a>
+            </nav>
+            
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="page-header-content">
+                <span class="section-subtitle">Book Your Experience</span>
+                <h1>Reservations</h1>
+                <div class="breadcrumbs">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span class="current">Reservations</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reservation Section -->
+        <section class="reservation-section">
+            <div class="container">
+                <div class="reservation-grid">
+                    <!-- Reservation Info -->
+                    <div class="reservation-info reveal-left">
+                        <span class="section-subtitle">Reserve Your Table</span>
+                        <h2>Book Your Culinary Experience</h2>
+                        <p>Whether you're celebrating a special occasion, planning a romantic dinner, or simply craving exceptional cuisine, we're here to make your visit unforgettable. Reservations are recommended, especially for weekends and holidays.</p>
+                        <p>For parties larger than 10 guests or private events, please contact us directly at <strong>+1 (555) 123-4567</strong> or email <strong>events@savoryhaven.com</strong>.</p>
+                        
+                        <div class="reservation-features">
+                            <div class="reservation-feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                                <div>
+                                    <h4>Flexible Timing</h4>
+                                    <p>Lunch & dinner seatings available</p>
+                                </div>
+                            </div>
+                            
+                            <div class="reservation-feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                                <div>
+                                    <h4>Private Dining</h4>
+                                    <p>Exclusive rooms for special events</p>
+                                </div>
+                            </div>
+                            
+                            <div class="reservation-feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                <div>
+                                    <h4>Prime Location</h4>
+                                    <p>Heart of the Gourmet District</p>
+                                </div>
+                            </div>
+                            
+                            <div class="reservation-feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                    <path d="M2 17l10 5 10-5"/>
+                                    <path d="M2 12l10 5 10-5"/>
+                                </svg>
+                                <div>
+                                    <h4>Dietary Options</h4>
+                                    <p>Vegetarian, vegan & gluten-free</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Reservation Form -->
+                    <div class="reservation-form-container reveal-right">
+                        <div class="form-success">
+                            <p>Thank you for your reservation! We have received your request and will confirm shortly via email or phone.</p>
+                        </div>
+                        
+                        <form class="reservation-form" data-validate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Full Name *</label>
+                                    <input type="text" id="name" name="name" data-required placeholder="John Doe">
+                                    <span class="form-error">Please enter your full name</span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" data-required placeholder="john@example.com">
+                                    <span class="form-error">Please enter a valid email address</span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" data-required placeholder="+1 (555) 123-4567">
+                                    <span class="form-error">Please enter a valid phone number</span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="guests">Number of Guests *</label>
+                                    <select id="guests" name="guests" data-required>
+                                        <option value="">Select guests</option>
+                                        <option value="1">1 Guest</option>
+                                        <option value="2">2 Guests</option>
+                                        <option value="3">3 Guests</option>
+                                        <option value="4">4 Guests</option>
+                                        <option value="5">5 Guests</option>
+                                        <option value="6">6 Guests</option>
+                                        <option value="7">7 Guests</option>
+                                        <option value="8">8 Guests</option>
+                                        <option value="9">9 Guests</option>
+                                        <option value="10">10 Guests</option>
+                                    </select>
+                                    <span class="form-error">Please select number of guests</span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="date">Reservation Date *</label>
+                                    <input type="date" id="date" name="date" data-required>
+                                    <span class="form-error">Please select a valid date</span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="time">Reservation Time *</label>
+                                    <select id="time" name="time" data-required>
+                                        <option value="">Select time</option>
+                                        <option value="11:00">11:00 AM</option>
+                                        <option value="12:00">12:00 PM</option>
+                                        <option value="13:00">1:00 PM</option>
+                                        <option value="14:00">2:00 PM</option>
+                                        <option value="17:00">5:00 PM</option>
+                                        <option value="18:00">6:00 PM</option>
+                                        <option value="19:00">7:00 PM</option>
+                                        <option value="20:00">8:00 PM</option>
+                                        <option value="21:00">9:00 PM</option>
+                                    </select>
+                                    <span class="form-error">Please select a time</span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="occasion">Special Occasion</label>
+                                <select id="occasion" name="occasion">
+                                    <option value="">Select occasion (optional)</option>
+                                    <option value="birthday">Birthday</option>
+                                    <option value="anniversary">Anniversary</option>
+                                    <option value="business">Business Dinner</option>
+                                    <option value="date">Date Night</option>
+                                    <option value="family">Family Gathering</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Special Requests</label>
+                                <textarea id="message" name="message" placeholder="Any dietary restrictions, seating preferences, or special requests..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Confirm Reservation</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        Savory <span>Haven</span>
+                    </a>
+                    <p>Experience the art of fine dining at Savory Haven, where every meal becomes a cherished memory.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="TripAdvisor">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M2 12h20"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links-wrapper">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="menu.html">Our Menu</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact-wrapper">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>123 Culinary Avenue, Gourmet District<br>New York, NY 10001</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>info@savoryhaven.com</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-hours-wrapper">
+                    <h4 class="footer-title">Opening Hours</h4>
+                    <ul class="footer-hours">
+                        <li>
+                            <span>Monday - Thursday</span>
+                            <span>11:00 AM - 10:00 PM</span>
+                        </li>
+                        <li>
+                            <span>Friday - Saturday</span>
+                            <span>11:00 AM - 11:00 PM</span>
+                        </li>
+                        <li>
+                            <span>Sunday</span>
+                            <span>10:00 AM - 9:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Savory Haven. All rights reserved. | Designed with passion for exceptional dining.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
