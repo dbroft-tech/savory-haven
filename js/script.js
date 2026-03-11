@@ -1,5 +1,5 @@
 /**
- * SAVORY HAVEN RESTAURANT WEBSITE
+ * FORKS OUT RESTAURANT WEBSITE
  * Vanilla JavaScript - No Frameworks
  * 
  * Features:
